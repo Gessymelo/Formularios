@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="FormularioNutri.css">
+    <title>Formulario Nutrição</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1 id="titulo"> Questionário Pré Consultoria</h1>
+            <p id="subtitulo">Você é o tamanho dos seus sonhos!</p>
+            <br>
+        </header>
+
+
+        <form>
+            <fieldset class="form-group">
+
+
+                <div class="campo">
+                    <label for="nome"> <strong>Nome</strong></label>
+                    <input type="text" name="Nome" id="nome" class="form-control" required>
+                </div>
+
+
+                <div class="campo">
+                    <label for="sobrenome"> <strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" class="form-control" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+                </div>
+
+
+
+                <div class="campo">
+                    <label for="telefone"><strong>Telefone</strong></label>
+                    <input type="tel" name="telefone" id="telefone" required placeholder="(xx) xxxxx-xxxx" minlength="9"
+                        maxlength="14" class="form-control">
+                </div>
+
+                <div class="campo">
+                    <label for="dataNascimento"><strong>Data de Nascimento</strong> </label>
+                    <input type="date" name="dataNascimento" id="dataNascimento" max="2023-12-31" min="1920-01-02"
+                        class="form-control">
+                </div>
+
+                <div class="campo">
+                    <label for="Genero"><strong>Sexo</strong></label>
+                    <select id="Genero" class="form-control">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Feminino</option>
+                        <option>Masculino</option>
+                        <option>Outros</option>
+                        <option>Prefiro não informa</option>
+                    </select>
+
+                </div>
+
+
+            </fieldset>
+
+            <fieldset class="form-campo">
+
+                <div class="form-endereso">
+                    <label for="cep">CEP</label>
+                    <input id="cep" type="text" required class="form-control" />
+                    <label for="logradouro">Logradouro</label>
+                    <input id="logradouro" type="text" required class="form-control" />
+                    <label for="numero">Número</label>
+                    <input id="numero" type="text" class="form-control" />
+                    <label for="complemento">Complemento</label>
+                    <input id="complemento" type="text" class="form-control" />
+                    <label for="bairro">Bairro</label>
+                    <input id="bairro" type="text" required class="form-control" />
+                    <label for="uf">Estado</label>
+                    <select id="uf" class="form-control">
+                        <option selected disabled value="">Selecione </option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+
+            </fieldset><br>
+
+            <fieldset class="form-campo">
+                <div class="campo">
+                    <label for="altura"> <strong>Altura</strong></label>
+                    <input type="number" value name="altura" step="0.01" placeholder="Ex: 165" required min="0"
+                        max="225" class="form-dado">
+                    <span>cm</span>
+                </div>
+
+                <div class="campo">
+                    <label for="peso"> <strong>Peso</strong></label>
+                    <input type="number" value name="Peso" step="0.01" placeholder="Ex: 62,5" required min="0" max="300"
+                        class="form-dado">
+                    <span>Kg</span>
+                </div>
+
+            </fieldset>
+
+
+
+
+            <fieldset><br>
+                <div id="check">
+                    <label><strong>Objetivo da Consulta?</strong></label><br><br>
+                    <input type="checkbox" id="opcao1" name="opcao1" value="emagrecimento">
+                    <label for="opcao1">Emagrecimento</label>
+                    <br>
+                    <input type="checkbox" id="opcao2" name="opcao2" value="Qualidade">
+                    <label for="opcao2">Qualidade de Vida</label>
+                    <br>
+                    <input type="checkbox" id="opcao3" name="opcap3" value="performance">
+                    <label for="opcao3">Performance Esportiva</label>
+                    <br>
+                    <input type="checkbox" id="opcao4" name="opcao4" value="disturbio">
+                    <label for="opcao4">Distúrbio Hormonais</label>
+                    <br>
+                    <input type="checkbox" id="opcao5" name="opcao5" value="opcao5">
+                    <label for="opcao5">Outros</label>
+                    <input selected disabled value="" type="text" name="opcao5" placeholder="Outra opção">
+
+
+                </div>
+
+
+            </fieldset>
+
+
+
+            <fieldset>
+                <h2>Essa é uma das partes mais importantes do seu tratamento, preencha corretamente com atenção às 4
+                    perguntas a seguir! </h2> <br>
+
+
+                <div class="campo">
+                    <label><strong>1- Você esta satisfeita(o) com seu porcentual de gordura atual em relação a sua saúde
+                            ou corpo?</strong></label><br><br>
+                    <label>
+                        <input type="radio" name="nutweb" value="sim">Sim, estou satisfeito
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="nutweb" value="nao">Não estou satisfeito
+                    </label>
+
+
+                </div>
+
+                <div class="campo"><br>
+                    <label><strong>2- Faz quanto tempo que você fez a última dieta alimentar
+                            correta?</strong></label><br><br>
+                    <label>
+                        <input type="radio" name="nutweb" value="mais"> Há mais de 6 (seis) meses
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="nutweb" value="menos">Há menos de 6 (seis) meses
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="nutweb" value="menos">Nunca fiz dietas
+                    </label>
+
+                </div>
+
+                <div id="check"><br>
+                    <label><strong>3- Quais refeições você faz diariamente:</strong></label><br><br>
+                    <input type="checkbox" id="cafe" name="cafe" value="cafe">
+                    <label for="cafe">Café da manhã</label>
+                    <br>
+                    <input type="checkbox" id="lanche" name="lanche" value="lanche">
+                    <label for="lanche">Lanche da manhã</label>
+                    <br>
+                    <input type="checkbox" id="almoco" name="almoco" value="almoco">
+                    <label for="olmoco">Almoço</label>
+                    <br>
+                    <input type="checkbox" id="tarde" name="tarde" value="tarde">
+                    <label for="tarde">Lanche da tarde</label>
+                    <br>
+                    <input type="checkbox" id="jantar" name="jantar" value="jantar">
+                    <label for="jantar">Jantar</label>
+                    <br>
+                    <input type="checkbox" id="noite" name="noite" value="noite">
+                    <label for="noite">Ceia da noite</label>
+
+                </div>
+
+                <div class="campo"><br>
+                    <label><strong>4- Você faz exercícios físicos:</strong></label><br><br>
+                    <label>
+                        <input type="radio" name="nutweb" value="mais"> 4 a 5 vezes por semana
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="nutweb" value="menos">2 a 3 vezes por semana
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="nutweb" value="menos">Esporadicamente
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="nutweb" value="menos">Não faço atividades físicas
+                    </label>
+                    <br><br>
+
+                </div>
+
+                <div>
+                    <label><strong>á quanto tempo? Quais exercícios físicos? Qual horário do
+                            treino?</strong></label><br><br>
+                    <textarea name="mensagem" placeholder="Digite aqui sua mensagem" minlength="20" maxlength="255"
+                        rows="6" cols="25"></textarea>
+                </div>
+
+            </fieldset><br>
+
+            
+                <button class="botao" type="submit">Enviar</button><br>
+                <button class="btmresete" type="reset">Limpa</button>
+            
+
+        </form>
+    </div>
+</body>
+
+</html>
