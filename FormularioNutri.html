@@ -19,7 +19,7 @@
         </header>
 
 
-        <form>
+        <form action="" method="post" id="myform">
             <fieldset class="form-group">
 
 
@@ -31,19 +31,19 @@
 
                 <div class="campo">
                     <label for="sobrenome"> <strong>Sobrenome</strong></label>
-                    <input type="text" name="sobrenome" id="sobrenome" class="form-control" required>
+                    <input type="text" name="sobrenome" id="sobrenome" class="form-control" >
                 </div>
 
                 <div class="campo">
                     <label for="email"><strong>Email</strong></label>
-                    <input type="email" name="email" id="email" class="form-control" required>
+                    <input type="email" name="email" id="email" class="form-control" >
                 </div>
 
 
 
                 <div class="campo">
                     <label for="telefone"><strong>Telefone</strong></label>
-                    <input type="tel" name="telefone" id="telefone" required placeholder="(xx) xxxxx-xxxx" minlength="9"
+                    <input type="tel" name="telefone" id="telefone"  placeholder="(xx) xxxxx-xxxx" minlength="9"
                         maxlength="14" class="form-control">
                 </div>
 
@@ -54,8 +54,8 @@
                 </div>
 
                 <div class="campo">
-                    <label for="Genero"><strong>Sexo</strong></label>
-                    <select id="Genero" class="form-control">
+                    <label for="genero"><strong>Sexo</strong></label>
+                    <select id="genero" class="form-control">
                         <option selected disabled value="">Selecione</option>
                         <option>Feminino</option>
                         <option>Masculino</option>
@@ -72,15 +72,15 @@
 
                 <div class="form-endereso">
                     <label for="cep">CEP</label>
-                    <input id="cep" type="text" required class="form-control" />
+                    <input id="cep" type="text" class="form-control" />
                     <label for="logradouro">Logradouro</label>
-                    <input id="logradouro" type="text" required class="form-control" />
+                    <input id="logradouro" type="text" class="form-control" />
                     <label for="numero">Número</label>
                     <input id="numero" type="text" class="form-control" />
                     <label for="complemento">Complemento</label>
                     <input id="complemento" type="text" class="form-control" />
                     <label for="bairro">Bairro</label>
-                    <input id="bairro" type="text" required class="form-control" />
+                    <input id="bairro" type="text"  class="form-control" />
                     <label for="uf">Estado</label>
                     <select id="uf" class="form-control">
                         <option selected disabled value="">Selecione </option>
@@ -119,14 +119,14 @@
             <fieldset class="form-campo">
                 <div class="campo">
                     <label for="altura"> <strong>Altura</strong></label>
-                    <input type="number" value name="altura" step="0.01" placeholder="Ex: 165" required min="0"
+                    <input type="number" value name="altura" step="0.01" placeholder="Ex: 165"  min="0"
                         max="225" class="form-dado">
                     <span>cm</span>
                 </div>
 
                 <div class="campo">
                     <label for="peso"> <strong>Peso</strong></label>
-                    <input type="number" value name="Peso" step="0.01" placeholder="Ex: 62,5" required min="0" max="300"
+                    <input type="number" value name="Peso" step="0.01" placeholder="Ex: 62,5"  min="0" max="300"
                         class="form-dado">
                     <span>Kg</span>
                 </div>
@@ -252,12 +252,14 @@
             </fieldset><br>
 
             
-                <button class="botao" type="submit" >Enviar</button><br>
+                <button class="botao" type="submit" id="submitbtn">Enviar</button><br>
                 <button class="btmresete" type="reset">Limpa</button>
             
 
         </form>
     </div>
+
+    <script src="FormularioNutri.js"></script>
 </body>
 
 </html>
